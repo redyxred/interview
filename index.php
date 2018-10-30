@@ -54,6 +54,6 @@
                 break;
         }
     } catch (Exception $e) {
-        die("[Platform] ".$e->getMessage());
+        die("[Platforms] ".$e->getMessage());
     }
 ?>

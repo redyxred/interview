@@ -1,6 +1,6 @@
 <?php
-    define("ROOT", $_SERVER['DOCUMENT_ROOT']);
-    require ROOT.'/core/config.php';
+  define("ROOT", $_SERVER['DOCUMENT_ROOT']);
+  require ROOT.'/core/config.php';
 
 	class User {
 		public static function checkSession() {
@@ -72,6 +72,6 @@
 			return $arr;
 		}
 
-		
+
 	}
 ?>
