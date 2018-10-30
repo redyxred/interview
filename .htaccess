@@ -1,0 +1,8 @@
+AddDefaultCharset utf8
+RewriteEngine On
+RewriteRule ^login$	/index.php?page=login	[L]
+RewriteRule ^register$	/index.php?page=register	[L]
+RewriteRule ^logout$	/index.php?page=logout	[L]
+RewriteRule ^profile$	/index.php?page=profile	[L]
+RewriteRule ^country/(.*)$	/index.php?page=country&country=$1	[L]
+RewriteRule ^add$	/index.php?page=add 	[L]
