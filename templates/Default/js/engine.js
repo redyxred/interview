@@ -172,15 +172,15 @@ $(document).ready(function () {
 						alert( xhr + code );
 					}
 				});
-				
+
 			}
 
 		});
 	}
 });
 
-function sendVote(id, question_id) {
-	
+function sendVote(id) {
+
 	if (action == false) {
 		$.ajax({
 			url: '/core/actions/vote.php',
@@ -202,4 +202,26 @@ function sendVote(id, question_id) {
 	}
 
 	return false;
+}
+
+function deleteQuestion(question_id) {
+	if (action == false) {
+		$.ajax({
+			url: 'core/actions/delete-question.php',
+			type: 'POST',
+			data: 'question_id=' + question_id,
+			success: function (result) {
+				var res = JSON.parse(result);
+				if (res.error == true) {
+					action = true;
+					showMessage('error', res.message);
+				} else {
+					location.reload();
+				}
+			},
+			error: function (xhr, code) {
+				alert(xhr + code);
+			}
+		});
+	}
 }

@@ -66,13 +66,16 @@
 			<div id="block">
 				<div class="title">Категории</div>
 				<ul class="categories">
+					<? if ($this->user['group'] == 1): ?>
+					<li><a href="/admin">Админ-панель</a></li>
+					<? endif; ?>
 					<li><a href="/popular">Популярные вопросы</a></li>
 					<li><a href="/region">По близости</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	
+
 	<script type="text/javascript" src="<?=$this->tplpath?>/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="<?=$this->tplpath?>/js/engine.js"></script>
 </body>

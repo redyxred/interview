@@ -72,6 +72,21 @@
 			return $arr;
 		}
 
+    public static function getGroup($user_id = "") {
+      if ($user_id == "") {
+        $user_id = $_SESSION['user_id'];
+      }
+
+      $db = new DB();
+      $sel_group = $db->query("SELECT `group` FROM `users` WHERE `user_id`='{$user_id}'");
+      $sel_group = $sel_group->fetch();
+
+      if ($sel_group == true) {
+        return $sel_group['group'];
+      } else {
+        return "";
+      }
+    }
 
 	}
 ?>

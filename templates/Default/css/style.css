@@ -255,6 +255,19 @@ body#lightBody div#wrContent div#left-block div#block div.head-vote div.count-vo
 	float: left;
 }
 
+body#lightBody div#wrContent div#left-block div#block div.head-vote div.delete-question {
+	font-size: 13px;
+	font-weight: 100;
+	color: rgba(47, 54, 64, 0.76);
+	margin: 10px 0 0 5px;
+	float: left;
+  cursor: pointer;
+}
+
+body#lightBody div#wrContent div#left-block div#block div.head-vote div.delete-question:hover {
+	border-bottom: 1px solid rgba(47, 54, 64, 0.76);
+}
+
 body#lightBody div#wrContent div#left-block div#block div.head-vote div.user {
 	font-size: 13px;
 	font-weight: 100;
@@ -273,6 +286,21 @@ body#lightBody div#wrContent div#left-block div#block div.head-vote div.user:hov
 
 body#lightBody div#wrContent div#left-block div#block div.variants-vote {
 	padding: 5px 40px;
+}
+
+body#lightBody div#wrContent div#left-block div#block div.head-vote button#addQuestionBtn {
+  border: 0;
+  background: #E9ECF0;
+  color: rgba(127, 143, 166, 0.76);
+  font-weight: 100;
+  border-radius: 5px;
+  padding: 7px 15px;
+  cursor: pointer;
+  float: right;
+}
+
+body#lightBody div#wrContent div#left-block div#block div.head-vote button#addQuestionBtn:hover {
+	background: #DBE1E9;
 }
 
 body#lightBody div#wrContent div#left-block div#block div.variants-vote ul.variants li {

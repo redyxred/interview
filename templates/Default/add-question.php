@@ -23,8 +23,7 @@
 				<form method="POST" id="addQuestion">
 					<div class="head-vote">
 						<input type="text" name="question" class="title" placeholder="Введите Ваш вопрос...">
-						<!-- <div class="count-votes">Всего  голос</div> -->
-						<div class="user"><a href="/user/1">Максим Шибков</a></div>
+						<button id="addQuestionBtn">Опубликовать</button>
 					</div>
 					<div class="variants-vote">
 						<ul class="variants">
@@ -38,7 +37,6 @@
 								<input type="text" class="text" name="variants[]" placeholder="Вариант ответa...">
 							</li>
 						</ul>
-						<button id="addQuestionBtn">Опубликовать</button>
 					</div>
 				</form>
 			</div>
@@ -54,7 +52,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<script type="text/javascript" src="<?=$this->tplpath?>/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="<?=$this->tplpath?>/js/engine.js"></script>
 </body>

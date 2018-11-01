@@ -6,10 +6,13 @@
   if ($conf_use_admin == false) { die("Возможность ограничена."); }
 
   try {
+    $tpl = new Template("admin/templates", $conf_template);
+    $tpl->setVar("path", "/admin/templates/Default");
     $page = $_GET['page'];
 
     switch ($page) {
-      case 'users':
+      case 'all-users':
+        $tpl->setVar("users", Admin::getUsers());
         $tpl->load("all-users");
         break;
 

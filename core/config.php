@@ -18,6 +18,6 @@
 
     // ВСЁ ЧТО ДАЛЬШЕ НЕ ТРОГАТЬ!!!
     spl_autoload_register(function ($class) {
-        require_once "/classes/".$class.".class.php";
+        require_once "/classes/{$class}.class.php";
     });
 ?>

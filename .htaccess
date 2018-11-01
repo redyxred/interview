@@ -7,5 +7,5 @@ RewriteRule ^profile$	/index.php?page=profile	[L]
 RewriteRule ^country/(.*)$	/index.php?page=country&country=$1	[L]
 RewriteRule ^add$	/index.php?page=add 	[L]
 
-# Admin links
-RewriteRule ^admin$ /index.php?page=admin [L]
+RewriteRule ^admin$ /admin/index.php?page=index [L]
+RewriteRule ^admin/users$ /admin/index.php?page=all-users [L]
