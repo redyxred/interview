@@ -5,8 +5,8 @@
 
         public $vars = array();
 
-        public function __construct ($base_template) {
-            $this->tpl_path = ROOT."/templates/".$base_template;
+        public function __construct ($dir, $base_template) {
+            $this->tpl_path = ROOT."/{$dir}/".$base_template;
             // echo "Template class has loaded. ({$this->tpl_path})";
         }
 

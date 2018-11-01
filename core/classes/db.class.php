@@ -7,13 +7,13 @@
 		private $pdo;
 
 		public function __construct () {
-			$dsn = "mysql:host=localhost;dbname={$conf_db_name};charset={$conf_db_charset}";
+			$dsn = "mysql:host=localhost;dbname=votes;charset=utf8";
 			$opt = [
 				PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
 				PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
 				PDO::ATTR_EMULATE_PREPARES => false
 			];
-			$test_connect = new PDO($dsn, $conf_db_user, $conf_db_password, $opt);
+			$test_connect = new PDO($dsn, "redyx", "12345qwe", $opt);
 			if ($test_connect) {
 				$this->pdo = $test_connect;
 			} else {

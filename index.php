@@ -3,7 +3,7 @@
     require ROOT.'/core/config.php';
 
     try {
-        $tpl = new Template($conf_template); // Подключаем шаблонизатор
+        $tpl = new Template("templates", $conf_template); // Подключаем шаблонизатор
         $db = new DB();
 
         $page = $_GET['page'];
